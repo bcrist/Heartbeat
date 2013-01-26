@@ -7,7 +7,7 @@ public class ObjectRotator : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		transform.Rotate(new Vector3(0f,1f,0f), speed);
+		transform.Rotate(new Vector3(0f,1f,0f), speed); 
 	}
 	
 }
