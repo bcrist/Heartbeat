@@ -6,7 +6,9 @@ public class KeyboardControls : MonoBehaviour {
 	public float force = 1f;
 	
 	public KeyCode[] keycodes = {KeyCode.W, KeyCode.S,KeyCode.A, KeyCode.D};
+	public KeyCode[] altKeycodes = {KeyCode.Up, KeyCode.Down,KeyCode.Left, KeyCode.Right};
 	protected bool[] keys = new bool[4];
+	protected bool[] altKeys = new bool[4];
 
 	// Use this for initialization
 	void Start () {
@@ -22,17 +24,22 @@ public class KeyboardControls : MonoBehaviour {
 			} else if(Input.GetKeyUp (keycodes[i])){
 				keys[i] = false;	
 			}
+			if(Input.GetKeyDown (altKeycodes[i])){
+				altKeys[i] = true;	
+			} else if(Input.GetKeyUp (altKeycodes[i])){
+				altKeys[i] = false;	
+			}
 		}
-		if(keys[0]){
+		if(keys[0] || altKeys[0]){
 			z += 1.0f;
 		}
-		if(keys[1]){
+		if(keys[1] || altKeys[1]){
 			z -= 1.0f;
 		}
-		if(keys[2]){
+		if(keys[2] || altKeys[2]){
 			x -= 1.0f;
 		}
-		if(keys[3]){
+		if(keys[3] || altKeys[3]){
 			x += 1.0f;
 		}
 		
