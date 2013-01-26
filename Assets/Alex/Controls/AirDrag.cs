@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AirDrag : MonoBehaviour {
 	
-	float dragFactor = 97.0f;
+	public float dragFactor = 97.0f;
 
 	// Use this for initialization
 	void Start () {

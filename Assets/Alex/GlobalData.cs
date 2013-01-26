@@ -14,12 +14,27 @@ namespace AssemblyCSharp
 	}
 	public class GlobalData
 	{
-		
-		public static PlayerModel ActivePlayerModel { get; set; }
+		private static PlayerModel mActivePlayerModel;
+		private static bool mActivePlayerModelInitialized;
+		public static PlayerModel ActivePlayerModel{
+			get {
+				if(!mActivePlayerModelInitialized){
+					PlayerModel[] models = GetPlayerModels();
+					mActivePlayerModel = models[new Random().Next (models.Length)];	
+					mActivePlayerModelInitialized = true;
+				}
+				return mActivePlayerModel;
+			}
+			set {
+				mActivePlayerModel = value;
+				mActivePlayerModelInitialized = true;
+			}
+			
+		}
 		
 		public static PlayerModel[] GetPlayerModels(){
 			PlayerModel[] retval = {
-				new PlayerModel("Dragonfly","DragonFly"),
+				new PlayerModel("Dragonfly","DragonFlyVirus/DragonFly"),
 				
 			};
 			return retval;

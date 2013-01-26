@@ -33,8 +33,9 @@ public class GuiScript : MonoBehaviour {
 		int y = 40;
 		for(int i=0; i<modelOptions.Length; ++i)
 		{
-			if(GUI.Button(new Rect(20,40,140,20), modelOptions[i].name)) {
+			if(GUI.Button(new Rect(20,y,140,20), modelOptions[i].name)) {
 				//	Select character and change to the right level
+				Debug.Log (modelOptions[i].name + ": " + modelOptions[i].resourceName);
 				GlobalData.ActivePlayerModel = modelOptions[i];
 				Application.LoadLevel("AlexWork");
 			}
