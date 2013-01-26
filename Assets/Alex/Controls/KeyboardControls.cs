@@ -6,7 +6,7 @@ public class KeyboardControls : MonoBehaviour {
 	public float force = 1f;
 	
 	public KeyCode[] keycodes = {KeyCode.W, KeyCode.S,KeyCode.A, KeyCode.D};
-	public KeyCode[] altKeycodes = {KeyCode.Up, KeyCode.Down,KeyCode.Left, KeyCode.Right};
+	public KeyCode[] altKeycodes = {KeyCode.UpArrow, KeyCode.DownArrow,KeyCode.LeftArrow, KeyCode.RightArrow};
 	protected bool[] keys = new bool[4];
 	protected bool[] altKeys = new bool[4];
 
