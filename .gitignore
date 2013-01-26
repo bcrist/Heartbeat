@@ -2,6 +2,7 @@
 *.userprefs
 *.csproj
 *.pidb
+Assembly-CSharp.pidb
 *.unityproj
 .DS_Store
 /Library/FailedAssetImports.txt

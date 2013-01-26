@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 814b2effe9621654db93d4a8aef23100
+=======
+guid: 324adb390ec8b274baf167be55c76338
+>>>>>>> ben
 TextureImporter:
   serializedVersion: 2
   mipmaps:
