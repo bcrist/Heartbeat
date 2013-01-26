@@ -34,7 +34,9 @@ namespace AssemblyCSharp
 		
 		public static PlayerModel[] GetPlayerModels(){
 			PlayerModel[] retval = {
-				new PlayerModel("Dragonfly","DragonFlyVirus/DragonFly"),
+				new PlayerModel("Dragonfly","DragonFlyVirus/DragonFlyModel"),
+				new PlayerModel("Durpy","DurpyVirus/DerpyModel"),
+				new PlayerModel("Rhynovirus","RhynoVirus/RhynoModel"),
 				
 			};
 			return retval;
