@@ -5,12 +5,14 @@ public class ContinueGameGUI : MonoBehaviour
 {
 	
 	public int menuNumber = 0;
+	public GUISkin skin;
 	// Use this for initialization
 	void Start () {
 	
 	}
 	void OnGUI()
 	{
+		GUI.skin = skin;
 		if(menuNumber == 1){
 			LevelList ll = new LevelList();
 			ll.tempFill();

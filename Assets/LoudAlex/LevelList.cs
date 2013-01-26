@@ -9,6 +9,7 @@ namespace AssemblyCSharp
 {
 	public class LevelList
 	{
+		public GUISkin skin;
 		public string[] levels;
 		
 		public void tempFill ()
@@ -24,6 +25,8 @@ namespace AssemblyCSharp
 		}
 		public void listToButtons ()
 		{
+			GUI.skin = skin;
+			
 			int p = 40;
 			int q = 0;
 			int lim = 280;

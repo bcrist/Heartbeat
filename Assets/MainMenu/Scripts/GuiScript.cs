@@ -7,10 +7,20 @@ public class GuiScript : MonoBehaviour {
 	/*
 	 * 0 = Main Menu
 	 * 1 = Character Select
+	 * 2 = Credits
+	 * 3 = Level Select
+	 * 4 = Continue Game
 	 */
 	public int menuNumber = 0;
+	public float creditsScrollRate = 0.1f;
 	
 	protected PlayerModel[] modelOptions;
+	protected LevelList ll = new LevelList();
+	protected float creditsScrollAmount;
+	
+	protected int screenWidth, screenHeight;
+	
+	public GUISkin skin;
 
 	// Use this for initialization
 	void Start () {
@@ -18,12 +28,20 @@ public class GuiScript : MonoBehaviour {
 	}
 	
 	void OnGUI(){
+		GUI.skin = skin;
+		
 		if(menuNumber == 1){
 			menuCharacterSelect();			
+		} else if(menuNumber == 2){
+			showCredits();			
 		} else {
 			menuMain();
 		}
 			
+	}
+	
+	void showCredits() {
+		
 	}
 	
 	void menuCharacterSelect(){
@@ -60,6 +78,7 @@ public class GuiScript : MonoBehaviour {
 		}
 		
 		if(GUI.Button(new Rect(20,70,80,20), "Credits")) {
+			creditsScrollAmount = 0f;
 			Application.LoadLevel("Credits");
 		}
 
