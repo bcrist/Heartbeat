@@ -48,10 +48,12 @@
      <Compile Include="Assets\Alex\Controls\KeyboardControls.cs" />
      <Compile Include="Assets\Alex\Controls\LockCamera.cs" />
      <Compile Include="Assets\Alex\Controls\MouseControls.cs" />
+     <Compile Include="Assets\Alex\GlobalData.cs" />
      <Compile Include="Assets\Alex\ReplaceWBCs.cs" />
+     <Compile Include="Assets\Alex\SetPlayerModel.cs" />
      <Compile Include="Assets\IsRedBloodDeadBehaviourScript.cs" />
      <Compile Include="Assets\MainMenu\Scripts\GuiScript.cs" />
-     <Compile Include="Assets\WBC_Collision_Handler.cs" />
+     <Compile Include="Assets\Resources\WBC_Collision_Handler.cs" />
      <Compile Include="Assets\WBCs\ObjectRotator.cs" />
      <Compile Include="Assets\_GameManager.cs" />
   </ItemGroup>

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using AssemblyCSharp;
 
 public class GuiScript : MonoBehaviour {
 	
@@ -8,10 +9,12 @@ public class GuiScript : MonoBehaviour {
 	 * 1 = Character Select
 	 */
 	public int menuNumber = 0;
+	
+	protected PlayerModel[] modelOptions;
 
 	// Use this for initialization
 	void Start () {
-		
+		modelOptions = GlobalData.GetPlayerModels();
 	}
 	
 	void OnGUI(){
@@ -25,31 +28,22 @@ public class GuiScript : MonoBehaviour {
 	
 	void menuCharacterSelect(){
 		// Make a background box
-		GUI.Box(new Rect(10,10,100,180), "Loader Menu");
+		GUI.Box(new Rect(10,10,160,60 + 30 * modelOptions.Length), "Select Player Model");
+		
+		int y = 40;
+		for(int i=0; i<modelOptions.Length; ++i)
+		{
+			if(GUI.Button(new Rect(20,40,140,20), modelOptions[i].name)) {
+				//	Select character and change to the right level
+				GlobalData.ActivePlayerModel = modelOptions[i];
+				Application.LoadLevel("AlexWork");
+			}
+			y += 30;
+		}
 
-		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
-		if(GUI.Button(new Rect(20,40,80,20), "Adam")) {
-			//	Select character and change to the right level
-			Application.LoadLevel("TestLevel");
-		}
-
-		// Make the second button.
-		if(GUI.Button(new Rect(20,70,80,20), "Buddy")) {
-			Application.LoadLevel("TestLevel");
-		}
 		
 		// Make the second button.
-		if(GUI.Button(new Rect(20,100,80,20), "Charlie")) {
-			Application.LoadLevel("TestLevel");
-		}
-		
-		// Make the second button.
-		if(GUI.Button(new Rect(20,130,80,20), "Meth Addict")) {
-			Application.LoadLevel("TestLevel");
-		}
-		
-		// Make the second button.
-		if(GUI.Button(new Rect(20,160,80,20), "Cancel")) {
+		if(GUI.Button(new Rect(20,y,140,20), "Cancel")) {
 			menuNumber = 0;
 		}
 	}
@@ -57,15 +51,19 @@ public class GuiScript : MonoBehaviour {
 	
 	void menuMain() {
 		// Make a background box
-		GUI.Box(new Rect(10,10,100,90), "Loader Menu");
+		GUI.Box(new Rect(10,10,100,120), "Loader Menu");
 
 		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
 		if(GUI.Button(new Rect(20,40,80,20), "Start")) {
 			menuNumber = 1;
 		}
+		
+		if(GUI.Button(new Rect(20,70,80,20), "Credits")) {
+			Application.LoadLevel("Credits");
+		}
 
 		// Make the second button.
-		if(GUI.Button(new Rect(20,70,80,20), "Quit")) {
+		if(GUI.Button(new Rect(20,100,80,20), "Quit")) {
 			Application.Quit();
 		}
 	}
