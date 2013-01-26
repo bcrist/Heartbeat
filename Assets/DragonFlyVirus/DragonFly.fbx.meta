@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 05035563f500945418fec95ad288ed5f
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: BodyMain
+    100002: //RootNode
+    100004: ikHandle1
+    100006: ikHandle2
+    100008: joint33
+    100010: LBigWingBase
+    100012: LBigWingTip
+    100014: Lelbow
+    100016: LShoulder
+    100018: lTip
+    100020: LWing1Base
+    100022: LWing1Tip
+    100024: LWing2Base
+    100026: LWing2Tip
+    100028: LWing3Base
+    100030: LWing3Tip
+    100032: LWing4Base
+    100034: LWing4Tip
+    100036: LWing5Tip
+    100038: Lwrist
+    100040: polySurface3
+    100042: RBigWingBase
+    100044: RBigWingTip
+    100046: RElbow
+    100048: rShoulder
+    100050: RTip
+    100052: RWing1Base
+    100054: RWing1Tiip
+    100056: RWing2Tip
+    100058: RWing2Tip 1
+    100060: RWing3Base
+    100062: RWing3Tip
+    100064: RWing4Base
+    100066: RWing4Tip
+    100068: Rwing5base
+    100070: Rwing5Tip
+    100072: RWrist
+    400000: BodyMain
+    400002: //RootNode
+    400004: ikHandle1
+    400006: ikHandle2
+    400008: joint33
+    400010: LBigWingBase
+    400012: LBigWingTip
+    400014: Lelbow
+    400016: LShoulder
+    400018: lTip
+    400020: LWing1Base
+    400022: LWing1Tip
+    400024: LWing2Base
+    400026: LWing2Tip
+    400028: LWing3Base
+    400030: LWing3Tip
+    400032: LWing4Base
+    400034: LWing4Tip
+    400036: LWing5Tip
+    400038: Lwrist
+    400040: polySurface3
+    400042: RBigWingBase
+    400044: RBigWingTip
+    400046: RElbow
+    400048: rShoulder
+    400050: RTip
+    400052: RWing1Base
+    400054: RWing1Tiip
+    400056: RWing2Tip
+    400058: RWing2Tip 1
+    400060: RWing3Base
+    400062: RWing3Tip
+    400064: RWing4Base
+    400066: RWing4Tip
+    400068: Rwing5base
+    400070: Rwing5Tip
+    400072: RWrist
+    4300000: polySurface3
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: polySurface3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
