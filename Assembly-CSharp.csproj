@@ -49,14 +49,13 @@
      <Compile Include="Assets\Alex\Controls\LockCamera.cs" />
      <Compile Include="Assets\Alex\Controls\MouseControls.cs" />
      <Compile Include="Assets\Alex\GlobalData.cs" />
-     <Compile Include="Assets\Alex\ReplaceWBCs.cs" />
      <Compile Include="Assets\Alex\SetPlayerModel.cs" />
      <Compile Include="Assets\IsRedBloodDeadBehaviourScript.cs" />
+     <Compile Include="Assets\LoudAlex\ContinueGameGUI.cs" />
+     <Compile Include="Assets\LoudAlex\GlobalLevelList.cs" />
+     <Compile Include="Assets\LoudAlex\LevelList.cs" />
      <Compile Include="Assets\MainMenu\Scripts\GuiScript.cs" />
      <Compile Include="Assets\Resources\WBC_Collision_Handler.cs" />
-     <Compile Include="Assets\WBCs\ObjectRotator.cs" />
-     <Compile Include="Assets\IsRedBloodDeadBehaviourScript.cs" />
-     <Compile Include="Assets\MainMenu\Scripts\GuiScript.cs" />
      <Compile Include="Assets\Scripts\ObjectRotator.cs" />
      <Compile Include="Assets\Scripts\PlayerCollisionHandler.cs" />
      <Compile Include="Assets\Scripts\ReplaceTaggedObjects.cs" />
