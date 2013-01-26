@@ -50,6 +50,7 @@
      <Compile Include="Assets\Alex\Controls\MouseControls.cs" />
      <Compile Include="Assets\IsRedBloodDeadBehaviourScript.cs" />
      <Compile Include="Assets\MainMenu\Scripts\GuiScript.cs" />
+     <Compile Include="Assets\Scripts\FlowObject.cs" />
      <Compile Include="Assets\Scripts\ObjectRotator.cs" />
      <Compile Include="Assets\Scripts\PlayerCollisionHandler.cs" />
      <Compile Include="Assets\Scripts\ReplaceTaggedObjects.cs" />
